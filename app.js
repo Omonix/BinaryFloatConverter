@@ -3,11 +3,7 @@ const entire = Math.abs(parseFloat(myFloat))
   .toString()
   .slice(0, myFloat.indexOf("."));
 const lb_findBool = (num) => {
-  if (num < 0) {
-    return "1";
-  } else {
-    return "0";
-  }
+  return num < 0 ? "1" : "0";
 };
 const lb_findExponent = () => {
   let conserv = 0;
